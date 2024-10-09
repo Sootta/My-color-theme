@@ -1,0 +1,21 @@
+{
+  "name": "thatdaytheme",
+  "displayName": "ThatDayTheme",
+  "description": "The color theme that inspired by our priceless memories of youth.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "ThatDayTheme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ThatDayTheme-color-theme.json"
+      }
+    ]
+  }
+}
