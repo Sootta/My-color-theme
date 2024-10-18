@@ -1,12 +1,29 @@
 {
 	"name": "PosukaArt",
 	"colors": {
-		"editor.background": "#312e27",
+		"editor.background": "#252721",
 		"editor.foreground": "#FFFFFF",
 		"activityBarBadge.background": "#282322",
 		"sideBarTitle.foreground": "#bbbbbb"
 	},
 	"tokenColors": [
+		{
+			"name": "Class",
+			"scope": [
+				"entity.name.type.class",
+				"support.class",
+				"entity.name.type",
+				"entity.other.inherited-class",
+				"entity.name.class",
+				"meta.class",
+				"meta.use.php",
+				"entity.name.namespace"
+			],
+			"settings": {
+				"fontStyle": "underline",
+				"foreground": "#ffdb28"
+			}			
+		},
 		{//コメント
 			"name": "Comment",
 			"scope": [
@@ -14,7 +31,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				//"fontStyle": "italic",
 				"foreground": "#597a54"
 			}
 		},
@@ -34,14 +51,14 @@
 				"constant.numeric", //数値
 			],
 			"settings": {
-				"foreground": "#F5DDDF"
+				"foreground": "#AE81FF"
 			}
 		},
 		{
 			"name": "Colors",
 			"scope": [
 				"constant.other.color",
-				"punctuation",
+				//"punctuation",
 				
 			],
 			"settings": {
@@ -61,13 +78,13 @@
 		{//型
 			"name": "Keyword, Storage",
 			"scope": [
-				"keyword",
+				//"keyword",
 				"storage.type",
 				"storage.modifier"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#89C3DD"
+				"foreground": "#fda138"
 			}
 		},
 		{
@@ -100,6 +117,7 @@
 		{
 			"name": "Tag",
 			"scope": [
+				"keyword.operator.assignment",
 				"keyword.control",
 				"entity.name.tag",
 				"meta.tag.sgml",
@@ -135,7 +153,8 @@
 			"name": "Other Variable, String Link",
 			"scope": [
 				"support.other.variable",
-				"string.other.link"
+				"string.other.link",
+				"keyword.other"
 			],
 			"settings": {
 				"foreground": "#f07178"
@@ -150,10 +169,10 @@
 				"constant.escape",
 				"variable.parameter",
 				"keyword.other.unit",
-				"keyword.other"
+				
 			],
 			"settings": {
-				"foreground": "#F5DDDF"
+				"foreground": "#d980fd"
 			}
 		},
 		{
@@ -162,10 +181,11 @@
 				"string",
 				"constant.other.symbol",
 				"constant.other.key",
-				"entity.other.inherited-class",
+				"string.quoted.double",//
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"punctuation.definition"
 			],
 			"settings": {
 				"foreground": "#8BB1D5"
@@ -174,11 +194,9 @@
 		{
 			"name": "Class, Support",
 			"scope": [
-				"entity.name",
 				"support.type",
-				"support.class",
 				"support.other.namespace.use.php",
-				"meta.use.php",
+				
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
 				"support.type.sys-types"
@@ -188,15 +206,15 @@
 				"foreground": "#ffdb28"
 			}
 		},
-		{
+		/*{
 			"name": "Entity Types",
 			"scope": [
 				"support.type"
 			],
 			"settings": {
 				"foreground": "#B2CCD6"
-			}
-		},
+			}F5DDDF
+		},*/
 		{
 			"name": "CSS Class and Support",
 			"scope": [
